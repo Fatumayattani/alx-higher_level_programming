@@ -2,12 +2,20 @@
 
 if __name__ == "__main__":
 
-    from sys import argv
+    import sys
 
-    sum = 0
+    argc = len(sys.argv)
 
-    for a in range(1, len(argv)):
+    argv = sys.argv
 
-        sum += int(argv[a])
+    res = 0
 
-    print(sum)
+
+
+    for i in range(1, argc):
+
+        res = res + int(argv[i])
+
+
+
+    print(res)
