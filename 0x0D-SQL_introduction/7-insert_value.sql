@@ -1,2 +1,2 @@
--- Inserts a new row into the table first_table.
+--This is to inserts a new row into the table first_table.
 INSERT INTO `first_table` (`id`, `name`) VALUES (89, "Holberton School");
