@@ -1,14 +1,14 @@
 #!/usr/bin/node
-const size = parseInt(process.argv[2]);
-if (isNaN(size)) {
+let num = process.argv[2];
+
+if (isNaN(num)) {
   console.log('Missing size');
 } else {
-  let square = "";
-  for (let i = 0; i < size; i++) {
-    for (let j = 0; j < size; j++) {
-      square += "X ";
+  for (let i = 0; i < num; i++) {
+    let msg = '';
+    for (let j = 0; j < num; j++) {
+      msg = msg + 'X';
     }
-    square += "\n";
+    console.log(msg);
   }
-  console.log(square);
 }
